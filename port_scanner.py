@@ -3,7 +3,7 @@ from tqdm import tqdm
 ports = []
 ip = input("Enter IP or domain you want to port scan :" or "scanme.nmap.org")
 
-for port in (pbar :=tqdm(range(1,500))):  # Scan ports from 1 to 65535
+for port in (pbar :=tqdm(range(1,65535))):  # Scan ports from 1 to 65535
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(1)  # Timeout for connection attempt (adjust as needed)
         try:
